@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037634076713",
+    "project_id": "kedi-115ca",
+    "storage_bucket": "kedi-115ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037634076713:android:489edbc5fae7be765c9c38",
+        "android_client_info": {
+          "package_name": "com.example.yuvamolsun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037634076713-13tabdklqojh13r8tqr7ftul640tv0sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7FgKffRR-bTRT3kH-BtOCW0aV3AkrbLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037634076713-13tabdklqojh13r8tqr7ftul640tv0sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
