@@ -50,6 +50,7 @@ class _HayvanBilgiState extends State<HayvanBilgi> {
       print(e);
     }
   }
+
   TextEditingController mesajController = TextEditingController();
   final _auth = FirebaseAuth.instance;
   bool silButonu = false;
@@ -77,12 +78,11 @@ class _HayvanBilgiState extends State<HayvanBilgi> {
     }
 
     return Scaffold(
-
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title:  Text("İlan Hakkında",
+        title: Text("İlan Hakkında",
             style: TextStyle(
                 color: Color(0xFF515C6F),
                 fontSize: 30,
@@ -104,7 +104,6 @@ class _HayvanBilgiState extends State<HayvanBilgi> {
             children: <Widget>[
               Row(
                 children: [
-
                   Spacer(),
                   silButonu
                       ? MaterialButton(
@@ -214,19 +213,24 @@ class _HayvanBilgiState extends State<HayvanBilgi> {
                                       child: Text('Şehir: ' +
                                           snapshot.data!.docs[index]['konum']),
                                     ),
-                                    SizedBox(height: 10,),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
                                     MaterialButton(
                                       shape: RoundedRectangleBorder(),
                                       color: Colors.orange,
-                                      onPressed: ()  {
+                                      onPressed: () {
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context) => Yorumlar(hayvanid: widget.hayvanId)));
+                                                builder: (context) => Yorumlar(
+                                                    hayvanid:
+                                                        widget.hayvanId)));
                                       },
                                       child: Text(
                                         'Iletisime Gec',
-                                        style: TextStyle(color: Colors.white, fontSize: 20),
+                                        style: TextStyle(
+                                            color: Colors.white, fontSize: 20),
                                       ),
                                     ),
                                   ],
@@ -241,7 +245,6 @@ class _HayvanBilgiState extends State<HayvanBilgi> {
                         );
                 },
               ),
-
             ],
           ),
         ),

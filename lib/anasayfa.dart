@@ -193,11 +193,16 @@ class _PageCategoriesState extends State<PageCategories> {
               decoration: BoxDecoration(
                 color: Colors.grey,
               ),
-              child: Text('YUVAM OLSUN',textAlign: TextAlign.center,),
+              child: Text(
+                'YUVAM OLSUN',
+                textAlign: TextAlign.center,
+              ),
             ),
             ListTile(
               title: const Text('Anasayfa'),
-              onTap: () {Navigator.of(context).pop();},
+              onTap: () {
+                Navigator.of(context).pop();
+              },
             ),
             ListTile(
               title: const Text('Mesajlar'),
